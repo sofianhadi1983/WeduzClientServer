@@ -15,5 +15,5 @@ do
     curl --header "Content-Type: application/json" \
 	     --request POST \
 	     --data "${REQUEST}" \
-	     http://server/log
+	     http://server:5000/log
 done
