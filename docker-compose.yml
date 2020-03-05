@@ -1,0 +1,33 @@
+version: '3'
+services:
+    client1:
+        build: ./client
+        privileged: true
+        environment: 
+            - NODE_NAME=ABC
+        links:
+            - server
+        ports:
+            - "2222:22"
+        volumes:
+            - ./client:/home
+    client2: 
+        build: ./client
+        privileged: true
+        environment: 
+            - NODE_NAME=xyz
+        links:
+            - server
+        ports:
+            - "2223:22"
+        volumes:
+            - ./client:/home
+        depends_on:
+            - client1
+    server:
+        build: ./server
+        privileged: true
+        volumes:
+            - ./server:/home
+        ports:
+            - "80:5000"
