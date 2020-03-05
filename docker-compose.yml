@@ -15,7 +15,7 @@ services:
         build: ./client
         privileged: true
         environment: 
-            - NODE_NAME=xyz
+            - NODE_NAME=XYZ
         links:
             - server
         ports:

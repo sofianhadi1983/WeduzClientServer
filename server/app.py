@@ -33,7 +33,7 @@ def recv_log_report():
         #insert new data
         db.insert(data)
     
-    return 'ok'
+    return 'ok\n'
 
 @main
 def run():
