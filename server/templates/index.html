@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alpha Client</title>
+</head>
+<body>
+    <h3>Metrics for ssh log-in attempts</h3>
+    {% for item in data %}
+    <p>* {{item.server_name}} had {{item.total_login_attempts}} attempt</p>
+    {% endfor %}
+</body>
