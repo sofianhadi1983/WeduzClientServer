@@ -1,2 +1,3 @@
 gopay_env/
 .vscode
+server/__pycache__/
