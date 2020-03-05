@@ -10,6 +10,13 @@ def say_hay():
     data = db.all()
     return render_template('index.html', data=data)
 
+"""
+Request format:
+{
+    "server_name": "NodeABC",
+    "total_login_attempts": 3
+}
+"""
 @app.route('/log', methods=['POST'])
 def recv_log_report():
     data = request.json
