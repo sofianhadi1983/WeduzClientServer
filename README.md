@@ -39,5 +39,3 @@ So, if you need to clean up the data, please open `server/db.json` and delete al
 # Improvement
 
 In this project, you will need to refresh the browser if you need to see the latest changes. The best scenario for this is activating web socket in order to notify the client each time `db.json` change. But i have no enough time to implement it. So, i just put `<meta http-equiv="refresh" content="5" />` in `template/index.html`, the browser will refresh and load new data every 5 second. You can change it to another number, feel free to do that.
-
-![How to run](Demo.gif)
