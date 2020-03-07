@@ -1,6 +1,6 @@
 # AlphaClientServer
 
-This project containing three different images, one server and two clients.
+This project consisting three containers, one server and two clients.
 Server use plain `json` file for storing logs. 
 
 This project use Alpine Linux.
@@ -27,7 +27,7 @@ docker-compose up --build
 </pre>
 
 Both clients are accessible through `SSH` on localhost via port 2222 and 2223. You need to edit `docker-compose.yml` if you want to use another port number.
-Please do `SSH` commands using password `gopay` and open the browser pointing to `http://127.0.0.1`
+Please do `SSH` commands using password `weduz` and open the browser pointing to `http://127.0.0.1`
 
 <pre>
 ssh root@localhost -p 2222
