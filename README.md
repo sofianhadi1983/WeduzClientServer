@@ -1,4 +1,4 @@
-# AlphaClientServer
+# WeduzClientServer
 
 This project consisting three containers, one server and two clients.
 Server use plain `json` file for storing logs. 
