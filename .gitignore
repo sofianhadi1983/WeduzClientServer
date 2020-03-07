@@ -1,3 +1,4 @@
-gopay_env/
+alpha_env/
 .vscode
 server/__pycache__/
+server/db.json
